@@ -27,8 +27,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20.12.0
-          cache: 'npm i'
-      - run: npm i
+          cache: 'npm install'
+      - run: npm install
       - run: npm run lint
 
   build:
@@ -45,8 +45,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20.11.0
-          cache: 'npm i'
-      - run: npm i
+          cache: 'npm install'
+      - run: npm install
       - run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v4
